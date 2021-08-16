@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Site</title>
+    <!-- Tailwind css link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-center font-black mt-16">Let's get some <span class="text-purple-600">Money</span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- balance and transaction  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4  ">
+                <div class="bg-blue-200 rounded p-8">
+                    <h1 class="text-5xl text-black">Deposit</h1>
+                    <h3 class="text-3xl text-semibold">$<span id="deposit-total">00</span> </h3>
+                </div>
+                <div class="bg-green-200 rounded p-8">
+                    <h1 class="text-5xl text-black">Withdraw</h1>
+                    <h3 class="text-3xl text-semibold">$<span id="withdraw-total">00</span></h3>
+                </div>
+                <div class="bg-red-200 rounded p-8">
+                    <h1 class="text-5xl text-black">Balance</h1>
+                    <h3 class="text-3xl text-semibold">$ <span id="balance-total">1200</span></h3>
+                </div>
+        </section>
+
+        <!-- deposit and Withdraw  -->
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="m-4 mt-10 bg-blue-200 rounded">
+                    <h1 class="m-4 text-3xl font-semibold">Please Deposit</h1>
+                    <input id="deposit-input" class="m-4 block rounded p-1" type="text" placeholder="Write your Amount">
+                    <button id="deposit-button" class="m-4 bg-red-400 px-3 py-1 rounded">Deposit</button>
+
+                </div>
+                <div class="m-4 mt-10 bg-green-200 rounded">
+                    <h1 class="m-4 text-3xl font-semibold">Please Withdraw</h1>
+                    <input id="withdraw-input" class="m-4 block rounded p-1" type="text"
+                        placeholder="Write your Amount">
+                    <button id="withdraw-button" class="m-4 bg-red-400 px-3 py-1 rounded">Withdraw</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center mt-32 text-gray-300">All rights deserve to Rafiqul Islam</p>
+    </footer>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
